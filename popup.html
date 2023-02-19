@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup .overlay {
+            position : fixed;
+            top : 0px;
+            left : 0px;
+            width : 100vm;
+            background: rgba(0,0,0,0.8);
+            z-index: 1;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam perferendis omnis exercitationem nostrum incidunt veniam, nisi quaerat velit harum! Eveniet vero facere, ipsum eligendi tenetur, animi cupiditate perspiciatis esse debitis quam optio quaerat </p>
+        </div>
+    </div>
+    <button onclick="togglePopup()">Show PopUp</button>
+</body>
+</html>
