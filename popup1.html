@@ -10,7 +10,9 @@
         $(document).ready(function(){
 
             $("#hide_para").click(function(){
-                $("#para").hide();
+                $("#para").hide(()=> {
+                    console.log("this is hide function")
+                });
             });
 
             $("#show_para").click(function(){
