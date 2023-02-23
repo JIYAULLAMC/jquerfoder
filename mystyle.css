@@ -1,0 +1,23 @@
+body {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(219, 241, 241);
+    border: 15px solid rgb(139, 240, 139);
+    border-radius: 25px;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+#para{
+    width: 400px;
+    border: 10px solid rgb(241, 154, 222);
+    border-radius: 15px;
+    
+}
+#mydiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
