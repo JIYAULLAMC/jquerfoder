@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/myjQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // function for hiding the paragraph
+
+            $("#hide_video").click(function(){
+                $("#video").hide(()=> {
+                    console.log("this will hide the video !")
+                });
+            });
+
+            // function for showing the paragraph yes added
+
+            $("#show_video").click(function(){
+                $("#video").show(function(){
+                    console.log("this is show the video !")
+                });
+            });
+ 
+ 
+            // function for hiding or showing the paragraph
+
+            $("#show_hide_video").click(function(){
+                $("#video_id").toggle(()=>{
+                    console.log("this is hide show  video profile!")
+                });
+            });
+
+        });
+    </script>
 </head>
 <body>
     <h1>You Should Include symboles  in jQuery code </h1>
@@ -18,7 +48,7 @@
 
     <br><br>
     <div>
-        <video src="https://www.youtube.com/watch?v=v7NjLBVg_Fc" controls width="500px"></video>
+        <video id="video_id" src="https://www.youtube.com/watch?v=v7NjLBVg_Fc" controls width="500px" ></video>
     </div>
     
 </body>
