@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./myjQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#hide_image").click(function(){
+                $("#image_id").hide();
+            });
+
+            $("#show_image").click(function(){
+                $("#image_id").show();
+            });
+
+            $("#show_hide_image").click(function(){
+                $("#image_id").toggle();
+            });
+        
+        
+        });
+    </script>
+</head>
+<body>
+    <h2>Branch 1 is created 1</h2>
+    <br>
+    <h1>HOME</h1>
+    <button id="hide_image">Hide Paragraph </button>
+    <button id="show_image">Show Paragraph</button>
+    <button id="show_hide_image">Show or Hide paragraph</button>
+    <br>
+    <hr>
+
+    <img src="./myimg.jpg" alt="this image" width="500px" id="image_id">
+
+</body>
+</html>
