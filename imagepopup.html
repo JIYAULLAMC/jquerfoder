@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./myjQuery.js"></script>
-    <script></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#hide_image").click(function(){
+                $("#image_id").hide();
+            });
+        
+        
+        });
+    </script>
 </head>
 <body>
     <h2>Branch 1 is created 1</h2>
@@ -15,8 +24,10 @@
     <button id="hide_image">Hide Paragraph </button>
     <button id="show_image">Show Paragraph</button>
     <button id="show_hide_image">Show or Hide paragraph</button>
+    <br>
+    <hr>
 
-    <img src="./myimg.jpg" alt="this image" width="500px">
+    <img src="./myimg.jpg" alt="this image" width="500px" id="image_id">
 
 </body>
 </html>
