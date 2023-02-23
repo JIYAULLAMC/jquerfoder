@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/myjQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // function for hiding the paragraph
+
+            $("#hide_video").click(function(){
+                $("#video_id").hide(()=> {
+                    console.log("this will hide the video !")
+                });
+            });
+
+            // function for showing the paragraph yes added
+
+            $("#show_video").click(function(){
+                $("#video_id").show(function(){
+                    console.log("this is show the video !")
+                });
+            });
+ 
+ 
+            // function for hiding or showing the paragraph
+
+            $("#show_hide_video").click(function(){
+                $("#video_id").toggle(()=>{
+                    console.log("this is hide show  video profile!")
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h1>You Should Include symboles  in jQuery code </h1>
+    <h2> # ==> hash  ==> for id </h2>
+    <h2> .  ==> dot ==> for class</h2>
+    <h3>exactly similar to css selectors </h3>
+
+    <button id="hide_video">Hide Video </button>
+    <button id="show_video">Show Video</button>
+    <button id="show_hide_video">Show or Hide Video</button>
+
+    <br><br>
+    <div>
+        <video id="video_id" src="https://www.youtube.com/watch?v=v7NjLBVg_Fc" controls width="500px" ></video>
+    </div>
+    
+</body>
+</html>
