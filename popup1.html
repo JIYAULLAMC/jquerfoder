@@ -7,11 +7,20 @@
     <title>Document</title>
     <script src="./myjQuery.js"></script>
     <script>
+        $(document).ready(function(){
 
+            $("#hide_para").click(function(){
+                $("#para").hide();
+            });
+
+        });
     </script>
 </head>
 <body>
-    <h1>You Should Include # or . for query selector in jQuery code </h1>
+    <h1>You Should Include symboles  in jQuery code </h1>
+    <h2> # ==> hash  ==> for id </h2>
+    <h2> .  ==> dot ==> for class</h2>
+    <h3>exactly similar to css selectors </h3>
 
     <button id="hide_para">Hide Paragraph </button>
     <button id="show_para">Show Paragraph</button>
