@@ -16,11 +16,15 @@
             });
 
             $("#show_para").click(function(){
-                $("#para").show();
+                $("#para").show(function(){
+                    console.log("this is show function!")
+                });
             });
 
             $("#show_hide_para").click(function(){
-                $("#para").toggle();
+                $("#para").toggle(()=>{
+                    console.log("this is hide show  function!")
+                });
             });
 
         });
