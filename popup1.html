@@ -8,6 +8,8 @@
     <script src="./myjQuery.js"></script>
     <script>
         $(document).ready(function(){
+            
+            // function for hiding the paragraph
 
             $("#hide_para").click(function(){
                 $("#para").hide(()=> {
@@ -15,11 +17,16 @@
                 });
             });
 
+            // function for showing the paragraph
+
             $("#show_para").click(function(){
                 $("#para").show(function(){
                     console.log("this is show function!")
                 });
             });
+ 
+ 
+            // function for hiding or showing the paragraph
 
             $("#show_hide_para").click(function(){
                 $("#para").toggle(()=>{
