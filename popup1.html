@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <script src="./myjQuery.js"></script>
     <script>
         $(document).ready(function(){
-            console.log("Document is ready function  commited from vs  code")
-            console.log("Document is ready function  commited from souce tree") 
+            
+            console.log("Document is ready!") 
             // function for hiding the paragraph
 
             $("#hide_para").click(function(){
@@ -37,6 +38,32 @@
 
         });
     </script>
+
+    <style>
+        body {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(219, 241, 241);
+            border: 15px solid rgb(139, 240, 139);
+            border-radius: 25px;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        #para{
+            width: 400px;
+            border: 10px solid rgb(241, 154, 222);
+            border-radius: 15px;
+            
+        }
+        #mydiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <h1>You Should Include symboles  in jQuery code </h1>
@@ -49,9 +76,12 @@
     <button id="show_hide_para">Show or Hide paragraph</button>
 
     <br><br>
-    <p id="para">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eveniet modi perferendis asperiores veniam. Dolor exercitationem eos nihil ipsam saepe suscipit quae ea doloribus reiciendis esse quidem illo velit vel, debitis, inventore officiis. Quam, numquam porro in distinctio quod optio.
-    </p>
-    
+    <div id="mydiv">
+
+        <p id="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eveniet modi perferendis asperiores veniam. Dolor exercitationem eos nihil ipsam saepe suscipit quae ea doloribus reiciendis esse quidem illo velit vel, debitis, inventore officiis. Quam, numquam porro in distinctio quod optio.
+        </p>
+    </div>
+        
 </body>
 </html>
